@@ -25,7 +25,7 @@
 > a <- replicate(10,as.integer(abs(rnorm(10)*10)))
 > b <- replicate(10,as.integer(abs(rnorm(100)*100)))
 
-#Multiply inverse with vector.
+#Multiply transverse with vector.
 > A2 <- tA %*% a
 > B2 <- tB %*% b
 
@@ -34,7 +34,7 @@
 > b2 <- matrix(b, nrow= 10)
   #Tested both matrix in RStudio to see if they ran, they do.
 
-#Combine [Inverse Matrix] + [Vector] + [Vector Matrix]
+#Combine [Transverse Matrix] + [Vector] + [Vector Matrix]
 > comboA <- a2 %*% A2
 > comboB <- b2 %*% B2
 
